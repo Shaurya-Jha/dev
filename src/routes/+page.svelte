@@ -19,7 +19,7 @@
 		const postFolder = pathSegments[pathSegments.length - 2]; // Gets 'my-first-post'
 
 		return {
-			href: `${resolve}/blog/${postFolder}`,
+			href: `${base}/blog/${postFolder}`,
 			title: module.metadata?.title || 'Untitled Post'
 		};
 	});

@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { base } from "$app/paths";
+    
 	interface Experience {
 		id: number;
 		role: string;
@@ -65,7 +67,7 @@
 <div class="w-full space-y-6">
 	<!-- Section Header -->
 	<h2 class="tracking-wider uppercase font-medium">
-		<a rel="external" href='/work-experience'>Work Experience</a>
+		<a rel="external" href={`${base}/work-experience`}>Work Experience</a>
 	</h2>
 
 	<!-- Experience List -->

@@ -19,7 +19,7 @@
 		const postFolder = pathSegments[pathSegments.length - 2]; // Gets 'my-first-post'
 
 		return {
-			href: `${base}/blog/${postFolder}`,
+			href: `${resolve}/blog/${postFolder}`,
 			title: module.metadata?.title || 'Untitled Post'
 		};
 	});
@@ -42,7 +42,7 @@
 			<h2 class="font-medium tracking-wider uppercase">articles</h2>
 			<ul class="ml-2 space-y-1">
 				{#each links as { href, title } (href)}
-					<li class="underline-offset-2 hover:underline"><a {href}>{title}</a></li>
+					<li class="underline-offset-2 hover:underline"><a rel="external" href={href}>{title}</a></li>
 				{/each}
 			</ul>
 		</div>

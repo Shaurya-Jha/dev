@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../../favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="text-scale" content="scale" />
+		<link href="../../_app/immutable/entry/start.B5CWaigo.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/DPB3P9jm.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CDhDGLBD.js" rel="modulepreload">
+		<link href="../../_app/immutable/entry/app.Cf18ioi1.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/B0BvW1x3.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/Cfug8aQt.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/0.CyikRfn2.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/3.DIM2HSVm.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/DMkFZb16.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/_IX5J9uo.js" rel="modulepreload">
+		
+		<link href="../../_app/immutable/assets/0.BvYyUxD0.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[0--><!--[--><div class="flex min-h-screen w-full py-10 px-4 bg-primary-warm"><div class="flex h-full w-full max-w-5xl flex-col items-center gap-16"><!--[--><main class="max-w-2xl mx-auto px-4 py-10"><article class="prose mx-auto"><header class="mb-6"><h1>Setting up Django + React.js</h1></header> <p>In this comprehensive guide, we’re going to demystify the process!</p> <p>I will walk you step-by-step through exactly how to set up a robust and scalable
+project structure for combining <strong>Django</strong> as your backend and <strong>React JS</strong> for your frontend.</p> <p>Forget the confusion - let’s build the perfect foundation together!</p> <h3>Step 1 - Foundations</h3> <p>Make sure that you have the setup ready and installed</p> <ul><li><a href="https://docs.astral.sh/uv/" rel="nofollow">uv</a> (You can also use ”<em>pip</em>” but here we are using uv)</li> <li><a href="https://nodejs.org/en" rel="nofollow">Node.js</a></li> <li><a href="https://pnpm.io/" rel="nofollow">pnpm</a> (You can also ”<em>npm</em>” but pnpm is faster)</li></ul> <h3>Step 2 - Project Structure</h3> <p>For the sake of example, we will make a directory named as “django-react-template” for our project.</p> <pre class="language-bash"><!----><code class="language-bash"><span class="token function">mkdir</span> django-react-template
+<span class="token builtin class-name">cd</span> django-react-template</code><!----></pre> <p>Create backend and frontend directories.</p> <pre class="language-bash"><!----><code class="language-bash"><span class="token function">mkdir</span> backend
+<span class="token function">mkdir</span> frontend</code><!----></pre> <h3>Step 3 - Setup Backend</h3> <p>Go in the backend directory and create a virtual environment for our django backend.</p> <pre class="language-bash"><!----><code class="language-bash">uv venv       <span class="token comment"># create a virtual env for the django backend</span></code><!----></pre> <p>Activate the virtual environment.</p> <pre class="language-bash"><!----><code class="language-bash"><span class="token builtin class-name">source</span> .venv/bin/activate                                  <span class="token comment"># macos / linux</span>
+.venv<span class="token punctuation"></span>Scripts<span class="token punctuation"></span>activate or activate.bat               <span class="token comment"># windows</span></code><!----></pre> <p>Intitialize python project using uv.</p> <pre class="language-bash"><!----><code class="language-bash">uv init</code><!----></pre> <p>Install django framework and other required dependencies.</p> <pre class="language-bash"><!----><code class="language-bash">uv <span class="token function">add</span> django</code><!----></pre> <p>Sync the installed dependencies with your created virtual environment.</p> <pre class="language-bash"><!----><code class="language-bash">uv <span class="token function">sync</span></code><!----></pre> <p>Create a new django project. Here, I am naming it core.</p> <pre class="language-bash"><!----><code class="language-bash">django-admin startproject core <span class="token builtin class-name">.</span>        <span class="token comment"># creates core dir in backend folder</span></code><!----></pre> <h3>Step 4 - Setup Frontend</h3> <p>Come back to the parent folder in our case it is django-react-template.</p> <pre class="language-bash"><!----><code class="language-bash"><span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
+<span class="token builtin class-name">cd</span> frontend</code><!----></pre> <p>Now time to create a empty react vite project</p> <pre class="language-bash"><!----><code class="language-bash"><span class="token function">pnpm</span> create vite@latest </code><!----></pre> <p>Setup the react project structure. You can choose as per your preferences.</p><!----></article></main><!--]--><!----></div></div><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1i64r1y = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						assets: "/minimalist-personal-portfolio"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.B5CWaigo.js"),
+						import("../../_app/immutable/entry/app.Cf18ioi1.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

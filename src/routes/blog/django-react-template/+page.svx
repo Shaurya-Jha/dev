@@ -1,0 +1,74 @@
+---
+title: Setting up Django + React.js 
+---
+
+In this comprehensive guide, we’re going to demystify the process! 
+
+I will walk you step-by-step through exactly how to set up a robust and scalable
+project structure for combining **Django** as your backend and **React JS** for your frontend. 
+
+Forget the confusion - let's build the perfect foundation together!
+
+### Step 1 - Foundations
+Make sure that you have the setup ready and installed
+- [uv](https://docs.astral.sh/uv/) (You can also use "*pip*" but here we are using uv)
+- [Node.js](https://nodejs.org/en)
+- [pnpm](https://pnpm.io/) (You can also "*npm*" but pnpm is faster)
+
+### Step 2 - Project Structure
+For the sake of example, we will make a directory named as "django-react-template" for our project.
+```bash
+mkdir django-react-template
+cd django-react-template
+```
+
+Create backend and frontend directories.
+```bash
+mkdir backend
+mkdir frontend
+```
+
+### Step 3 - Setup Backend
+Go in the backend directory and create a virtual environment for our django backend.
+```bash
+uv venv       # create a virtual env for the django backend
+```
+
+Activate the virtual environment.
+```bash
+source .venv/bin/activate                                  # macos / linux
+.venv\Scripts\activate or activate.bat               # windows
+```
+
+Intitialize python project using uv.
+```bash
+uv init
+```
+
+Install django framework and other required dependencies.
+```bash
+uv add django
+```
+
+Sync the installed dependencies with your created virtual environment.
+```bash
+uv sync
+```
+
+Create a new django project. Here, I am naming it core.
+```bash
+django-admin startproject core .        # creates core dir in backend folder
+```
+
+### Step 4 - Setup Frontend
+Come back to the parent folder in our case it is django-react-template.
+```bash
+cd ..
+cd frontend
+```
+Now time to create a empty react vite project
+```bash
+pnpm create vite@latest 
+```
+
+Setup the react project structure. You can choose as per your preferences.

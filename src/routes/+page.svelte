@@ -25,7 +25,7 @@
 	});
 </script>
 
-<div class="flex h-full w-full justify-center px-4 py-10">
+<div class="flex h-full w-full justify-center px-4 py-10 bg-primary-warm text-primary-warm">
 	<!-- Changed w-2xl to w-full max-w-2xl -->
 	<div class="flex h-full w-full max-w-2xl flex-col items-center gap-16">
 		<Introduction />
@@ -38,7 +38,7 @@
 		<Divider />
 
 		<!-- blogs -->
-		<div class="flex w-full flex-col gap-4">
+		<div class="flex w-full flex-col gap-8">
 			<h2 class="font-medium tracking-wider uppercase">articles</h2>
 			<ul class="ml-2 space-y-1">
 				{#each links as { href, title } (href)}

@@ -13,3 +13,35 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
 }
+
+.bg-primary {
+    background-color: #121212;
+}
+
+.bg-secondary {
+    background-color: #1E1E1E;
+}
+
+.text-primary {
+    color: #E0E0E0;
+}
+
+.accent {
+    color: #00FFD1;
+}
+
+.bg-primary-warm {
+    background-color: #F7F5F0;
+}
+
+.bg-secondary-warm {
+    background-color: #FFFFFF;
+}
+
+.text-primary-warm {
+    color: #4A4A4A;
+}
+
+.accent {
+    color: #A38B5C;
+}

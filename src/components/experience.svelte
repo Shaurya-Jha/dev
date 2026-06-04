@@ -64,7 +64,7 @@
 	}
 </script>
 
-<div class="w-full space-y-6">
+<div class="w-full flex flex-col gap-8">
 	<!-- Section Header -->
 	<h2 class="tracking-wider uppercase font-medium">
 		<a rel="external" href={`${base}/work-experience`}>Work Experience</a>

@@ -1,0 +1,1 @@
+import{n as e}from"../chunks/Bwqm9-ob.js";export{e as component};

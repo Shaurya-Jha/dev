@@ -3,10 +3,10 @@
   let { title, children } = $props();
 </script>
 
-<main class="max-w-2xl mx-auto px-4 py-10">
+<main class="w-full">
   <!-- The prose class will now be recognized by Tailwind v4 -->
   <article class="prose mx-auto">
-    <header class="mb-6">
+    <header class="mb-10">
       <h1>{title}</h1>
     </header>
 

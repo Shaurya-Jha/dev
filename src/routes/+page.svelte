@@ -25,7 +25,7 @@
 	});
 </script>
 
-<div class="flex h-full w-full justify-center px-4 py-10 bg-primary-warm text-primary-warm">
+<div class="flex h-full w-full justify-center px-4 py-10">
 	<!-- Changed w-2xl to w-full max-w-2xl -->
 	<div class="flex h-full w-full max-w-2xl flex-col items-center gap-16">
 		<Introduction />
@@ -40,7 +40,7 @@
 		<!-- blogs -->
 		<div class="flex w-full flex-col gap-8">
 			<h2 class="font-medium tracking-wider uppercase">articles</h2>
-			<ul class="ml-2 space-y-1">
+			<ul class="ml-4 space-y-4 list-disc">
 				{#each links as { href, title } (href)}
 					<li class="underline-offset-2 hover:underline"><a rel="external" href={href}>{title}</a></li>
 				{/each}
